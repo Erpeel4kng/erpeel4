@@ -124,8 +124,16 @@
     height: 2px;
   }
   
+  #pengertian{
+    padding: 15px 20px;
+  }
+  
   #pengertian .penjelasan p{
     font-size: 14px;
+  }
+  
+  #materi{
+    padding: 15px 20px;
   }
   
   #materi .row .card .cardHeader{
