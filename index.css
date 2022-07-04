@@ -1,0 +1,142 @@
+/* home */
+#home{
+  background-image: linear-gradient(rgba(9,5,54,.3),rgba(5,4,46,.7)), url("../image/bg.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#home h2 a{
+  color: #fbfbfa;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+#home h3{
+  width: 50%;
+  color: #fbfbfa;
+  font-size: 1.2rem;
+  line-height: 25px;
+  position: relative;
+}
+
+#home h3:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 4px;
+  background-color: #fbfbfa;
+}
+
+
+/* pengertian */
+#pengertian{
+  padding: 5vw 8vw 0 8vw;
+  text-align: start;
+}
+
+#pengertian .penjelasan p{
+  font-size: 1rem;
+  color: #221811;
+  margin-top: 10px;
+}
+
+#materi{
+  padding: 5vw 8vw 0 8vw;
+  text-align: start;
+}
+
+#materi .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+#materi .row .card{
+  width: 24rem;
+  background: #fbfbfa;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: .3s;
+}
+
+#materi .row .card .cardHeader{
+  text-align: center;
+  padding: 50px 10px;
+  background: #1c366d;
+  color: #fbfbfa;
+}
+
+#materi .row .card .cardBody{
+  padding: 30px 20px;
+  font-size: 18px;
+}
+
+.cardBody .btn{
+  display: block;
+  color: #fbfbfa;
+  text-align: center;
+  background: #1c366d;
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+.cardBody .btn:hover{
+  background: #fcb504;
+  color: #1c366d;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, .25);
+}
+
+
+@media (max-width: 768px){
+  #home{
+    height: 250px;
+  }
+  
+  #home h2 a{
+    font-size: 17px;
+  }
+  
+  #home h3{
+    font-size: 14px;
+    width: 70%;
+  }
+  
+  #home h3:before{
+    height: 2px;
+  }
+  
+  #pengertian .penjelasan p{
+    font-size: 14px;
+  }
+  
+  #materi .row .card .cardHeader{
+    font-size: 15px;
+  }
+  
+  #materi .row .card .cardBody{
+    font-size: 14px;
+  }
+  
+  .card{
+    width: 100%;
+  }
+}
