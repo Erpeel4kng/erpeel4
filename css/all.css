@@ -27,8 +27,43 @@ h1:before{
   background: #fbc504;
 }
 
+.scrollTop i{
+  position: fixed;
+  text-align: center;
+  line-height: 60px;
+  font-size: 2rem;
+  color: #fbc504;
+  bottom: 800px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background: #1c366d;
+  border-radius: 50%;
+  background-size: 40px;
+  cursor: pointer;
+  z-index: 10000;
+  visibility: hidden;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
+  opacity: 0;
+  transition: .5s;
+}
+
+.scrollTop i.active{
+  bottom: 40px;
+  visibility: visible;
+  opacity: 1;
+}
+
 @media (max-width: 768px) {
   h1{
     font-size: 19.5px;
+  }
+  
+  .scrollTop i{
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2rem;
   }
 }
