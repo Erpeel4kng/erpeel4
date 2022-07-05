@@ -52,6 +52,8 @@
   margin-top: 10px;
 }
 
+
+/* materi */
 #materi{
   padding: 5vw 8vw 0 8vw;
   text-align: start;
@@ -86,13 +88,14 @@
 }
 
 .cardBody .btn{
-  display: block;
   color: #fbfbfa;
   text-align: center;
   background: #1c366d;
   margin-top: 30px;
   text-decoration: none;
   padding: 10px 5px;
+  border: none;
+  border-radius: 3px;
 }
 
 .cardBody .btn:hover{
@@ -103,6 +106,78 @@
 .card:hover{
   transform: scale(1.05);
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, .25);
+}
+
+
+/* popup materi */
+.modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid #1c366d;
+  z-index: 10;
+  background-color: #fcb504;
+  border-radius: 4px;
+  padding: 5px 10px;
+  width: 500px;
+  max-width: 100%;
+}
+
+.modal.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal .modal-header{
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1c366d;
+}
+
+.modal .modal-header .title{
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #221811;
+}
+
+.modal-header .close-button{
+  margin-left: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #dc1617;
+}
+
+.modal .modal-body{
+  padding: 10px 15px;
+  color: #221811;
+}
+
+.modal .modal-body a{
+  color: #1c366d;
+}
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
 }
 
 
@@ -140,11 +215,24 @@
     font-size: 15px;
   }
   
-  #materi .row .card .cardBody{
+  #materi .row .card .cardBody,
+  .modal .modal-body{
     font-size: 14px;
   }
   
   .card{
     width: 100%;
+  }
+  
+  .modal-header .close-button{
+    font-size: 30px;
+  }
+  
+  .modal .modal-header .title{
+    font-size: 17px;
+  }
+  
+  .modal{
+    width: 95%;
   }
 }

@@ -15,6 +15,7 @@ h1{
   position: relative;
   font-size: 2.5rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 h1:before{

@@ -71,6 +71,7 @@
   <section id="materi">
     <h1>Materi yang diajarkan</h1>
     
+    <!-- card -->
     <div class="row">
       <div class="card">
         <div class="cardHeader">
@@ -78,7 +79,7 @@
         </div>
         <div class="cardBody">
           <p>Mau tau apa itu pemrograman Web dengan PHP? yuk klik tombol bawah ini untuk mengetahuinya.</p>
-          <a href="#" class="btn">Read More</a>
+          <button class="btn" data-modal-target="#modalPHP">Baca Materi</button>
         </div>
       </div>
       <div class="card">
@@ -87,7 +88,7 @@
         </div>
         <div class="cardBody">
           <p>Mau tau apa itu Pemrograman C++? yuk klik tombol bawah ini untuk mengetahuinya.</p>
-          <a href="#" class="btn">Read More</a>
+          <button class="btn" data-modal-target="#modalC">Baca Materi</button>
         </div>
       </div>
       <div class="card">
@@ -96,7 +97,7 @@
         </div>
         <div class="cardBody">
           <p>Mau tau apa itu pemrograman Visual Basic.Net? yuk klik tombol bawah ini untuk mengetahuinya.</p>
-          <a href="#" class="btn">Read More</a>
+          <button class="btn" data-modal-target="#modalBasic">Baca Materi</button>
         </div>
       </div>
       <div class="card">
@@ -105,7 +106,7 @@
         </div>
         <div class="cardBody">
           <p>Mau tau apa itu pemrograman Mobile Android? yuk klik tombol bawah ini untuk mengetahuinya.</p>
-          <a href="#" class="btn">Read More</a>
+          <button class="btn" data-modal-target="#modalMobile">Baca Materi</button>
         </div>
       </div>
       <div class="card">
@@ -114,7 +115,7 @@
         </div>
         <div class="cardBody">
           <p>Mau tau apa itu pemrograman JAVA yuk klik tombol bawah ini untuk mengetahuinya.</p>
-          <a href="#" class="btn">Read More</a>
+          <button class="btn" data-modal-target="#modalJava">Baca Materi</button>
         </div>
       </div>
       <div class="card">
@@ -123,7 +124,7 @@
         </div>
         <div class="cardBody">
           <p>Mau tau apa itu Database MySQL yuk klik tombol bawah ini untuk mengetahuinya.</p>
-          <a href="#" class="btn">Read More</a>
+          <button class="btn" data-modal-target="#modalMysql">Baca Materi</button>
         </div>
       </div>
       <div class="card">
@@ -132,10 +133,121 @@
         </div>
         <div class="cardBody">
           <p>Mau tau apa itu SQL Server yuk klik tombol bawah ini untuk mengetahuinya.</p>
-          <a href="#" class="btn">Read More</a>
+          <button class="btn" data-modal-target="#modalSql">Baca Materi</button>
         </div>
       </div>
     </div>
+    
+    <!-- pop up materi PHP -->
+    <div class="modal" id="modalPHP">
+      <div class="modal-header">
+        <div class="title">Pemrograman Web dengan PHP</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        PHP  (PHP: Hypertext Preprocessor) adalah sebuah bahasa pemrograman server side scripting yang bersifat open source.
+        <br><br>
+        Sebagai sebuah scripting language, PHP menjalankan instruksi pemrograman saat proses runtime. Hasil dari instruksi tentu akan berbeda tergantung data yang diproses.
+        <br><br>
+        PHP merupakan bahasa pemrograman server-side, maka script dari PHP nantinya akan diproses di server. Jenis server yang sering digunakan bersama dengan PHP antara lain Apache, Nginx, dan LiteSpeed. <br><br>
+        <a href="https://www.google.com/amp/s/www.niagahoster.co.id/blog/pengertian-php/">Baca Selengkapnya</a>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    
+    <!-- pop up materi C++ -->
+    <div class="modal" id="modalC">
+      <div class="modal-header">
+        <div class="title">Pemrograman C++</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Bahasa pemrograman C++ adalah bahasa yang bisa digunakan untuk membuat berbagai aplikasi. Misalnya, aplikasi pengolah gambar, software gadget, game, hingga sistem operasi baru.
+        <br><br>
+        Bahasa ini dikembangkan dari bahasa pemrograman C. Tak heran kalau dua bahasa ini memiliki sintaks dan struktur kode yang sama. Bedanya, C++ merupakan Object Oriented Programming (OOP) sedangkan C merupakan bahasa pemrograman prosedural. 
+        <br><br>
+        <a href="https://www.google.com/amp/s/www.niagahoster.co.id/blog/bahasa-pemrograman-cpp/">Baca Selengkapnya</a>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    
+    <!-- pop up materi Basic.Net -->
+    <div class="modal" id="modalBasic">
+      <div class="modal-header">
+        <div class="title">Pemrograman Visual Basic.Net</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        VB.NET adalah singkatan dari Visual Basic.NET. VB.NET adalah bahasa pemrograman yang berorientasi objek (OOP). Ini berarti VB.Net telah mendukung fitur pemrograman berorientasi objek yang meliputi enkapsulasi, polimorfisme, abstraksi, dan inheritance.
+        <br><br>
+        Visual Basic .ASP NET berjalan menggunakan .NET framework, yang berarti telah memiliki akses penuh ke .NET libraries. Ini adalah alat yang sangat produktif untuk membuat berbagai aplikasi Web, Windows, Office, dan mobile yang telah dibangun di atas .NET framework.
+        <br><br>
+        <a href="https://www.google.com/amp/s/wartaekonomi.co.id/amp/read372885/apa-itu-visual-basicnet">Baca Selengkapnya</a>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    
+    <!-- pop up materi Mobile Android -->
+    <div class="modal" id="modalMobile">
+      <div class="modal-header">
+        <div class="title">Pemrograman Mobile Android</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Pemrograman mobile merupakan gabungan antara kata ” pemrograman ” dan ” mobile “. Istilah lainnya yaitu mobile programming. Pemrograman ini secara singkat memiliki makna proses menulis kode-kode program untuk membuat aplikasi yang ditujukan untuk perangkat bergerak (Mobile).
+        <br><br>
+        Jadi berbagai jenis aplikasi smartphone yang kita pakai setiap hari merupakan hasil akhir dari pemrograman mobile. Orang yang membuatnya disebut Mobile Developer, baik itu mobile android developer atau mobile iOS developer.
+        <br><br>
+        <a href="https://badoystudio.com/pemrograman-mobile/">Baca Selengkapnya</a>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    
+    <!-- pop up materi Java -->
+    <div class="modal" id="modalJava">
+      <div class="modal-header">
+        <div class="title">Pemrograman JAVA</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Java adalah bahasa “native” atau bahasa asli untuk membuat aplikasi android. Dan saat ini jumlah perangkat mobile sudah jauh melampaui perangkat komputer / laptop.
+        <br><br>
+        Selain itu, bahasa Java juga menjadi bahasa pemrograman wajib untuk setiap kampus atau institusi pendidikan komputer, terutama ketika membahas materi pemrograman berbasis object (PBO) atau yang dalam bahasa inggris disebut object oriented programming (OOP).
+        <br><br>
+        <a href="https://www.duniailkom.com/tutorial-belajar-bahasa-pemrograman-java-untuk-pemula/">Baca Selengkapnya</a>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    
+    <!-- pop up materi Mysql -->
+    <div class="modal" id="modalMysql">
+      <div class="modal-header">
+        <div class="title">Database MySQL</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        MySQL atau dibaca My Sequel merupakan sebuah Database Management System atau sering disingkat DBMS yang dijalankan menggunakan perintah SQL (Structured Query Language) yang populer digunakan untuk pembuatan aplikasi berbasis website.
+        <br><br>
+        MySQL juga termasuk ke dalam RDBMS atau Relational Database Management System, dimana di dalam struktur databasenya sehingga ketika proses pengambilan data menggunakan metode relational database. Yang juga menjadi penghubung antara perangkat lunak dan database server.
+        <br><br>
+        <a href="https://www.dqlab.id/fungsi-mysql-kelebihan-serta-kekurangannya#:~:text=MySQL%20atau%20dibaca%20My%20Sequel,untuk%20pembuatan%20aplikasi%20berbasis%20website.">Baca Selengkapnya</a>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    
+    <!-- pop up materi SQL Server -->
+    <div class="modal" id="modalSql">
+      <div class="modal-header">
+        <div class="title">SQL Server</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Microsoft SQL Server adalah salah satu software jenis Relational Database Management System (RDBMS) yang cukup sering digunakan. Sesuai namanya, software ini dikembangkan oleh perusahaan besar Microsoft dan cukup scalable. Maksudnya adalah untuk pemakaiannya Microsoft SQL Server bisa dimana – mana dari laptop manapun, ke jaringan server cloud dan lain – lain. Namun istilah scalable ini tetap saja harus memperhatikan persyaratan hardware maupun software.
+        <br><br>
+        <a href="https://www.nesabamedia.com/pengertian-microsoft-sql-server/">Baca Selengkapnya</a>
+      </div>
+    </div>
+    <div id="overlay"></div>
   </section>
   
   
@@ -143,6 +255,7 @@
   <script src="./js/navbar.js"></script>
   <script src="./js/typing.js"></script>
   <script src="./js/backToTop.js"></script>
+  <script src="./js/popup.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./js/fakeLoader.js"></script>
 
