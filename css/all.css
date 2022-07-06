@@ -42,7 +42,7 @@ h1:before{
   border-radius: 50%;
   background-size: 40px;
   cursor: pointer;
-  z-index: 10000;
+  z-index: 10;
   visibility: hidden;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
   opacity: 0;
