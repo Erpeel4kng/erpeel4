@@ -23,6 +23,9 @@
   <!-- loading -->
   <div class="fakeLoader"></div>
   
+  <!-- backToTop btn -->
+  <div class="scrollTop" onclick="scrollToTop()"><i class="fa-solid fa-angles-up"></i></div>
+  
   <!-- navbar -->
   <section class="navbar">
     <header>
@@ -31,9 +34,18 @@
         
         <div class="navMenu">
           <ul>
-            <li><a href="./index.html" class="nav-link">Beranda</a></li>
-            <li><a href="./galeri.html" class="nav-link">Galeri</a></li>
-            <li><a href="#" class="navlink">Kontak</a></li>
+            <li><a href="./index.html" class="navLink">Beranda</a></li>
+            <li>
+              <label for="btn1" class="show">Daftar &plus;</label>
+              <a href="#" class="hidden">Daftar</a>
+              <input type="checkbox" id="btn1">
+              <ul>
+                <li><a href="./daftar/murid.html">Siswa/i</a></li>
+                <li class="nbb"><a href="./daftar/guru.html">Guru</a></li>
+              </ul>
+            </li>
+            <li><a href="./galeri.html" class="navLink">Galeri</a></li>
+            <li><a href="#" class="navLink">Kontak</a></li>
           </ul>
         </div>
         <div class="hamburger">
@@ -47,6 +59,7 @@
   
   <!-- javascript src -->
   <script src="./js/navbar.js"></script>
+  <script src="./js/backToTop.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./js/fakeLoader.js"></script>
 

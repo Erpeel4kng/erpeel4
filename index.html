@@ -35,6 +35,15 @@
         <div class="navMenu">
           <ul>
             <li><a href="#" class="navLink">Beranda</a></li>
+            <li>
+              <label for="btn1" class="show">Daftar &plus;</label>
+              <a href="#" class="hidden">Daftar</a>
+              <input type="checkbox" id="btn1">
+              <ul>
+                <li><a href="./daftar/murid.html">Siswa/i</a></li>
+                <li class="nbb"><a href="./daftar/guru.html">Guru</a></li>
+              </ul>
+            </li>
             <li><a href="./galeri.html" class="navLink">Galeri</a></li>
             <li><a href="./contact.html" class="navLink">Kontak</a></li>
           </ul>
@@ -79,7 +88,7 @@
         </div>
         <div class="cardBody">
           <p>Mau tau apa itu pemrograman Web dengan PHP? yuk klik tombol bawah ini untuk mengetahuinya.</p>
-          <button class="btn" data-modal-target="#modalPHP">Baca Materi</button>
+          <button class="btn" data-modal-target=".modal1">Baca Materi</button>
         </div>
       </div>
       <div class="card">
@@ -88,7 +97,7 @@
         </div>
         <div class="cardBody">
           <p>Mau tau apa itu Pemrograman C++? yuk klik tombol bawah ini untuk mengetahuinya.</p>
-          <button class="btn" data-modal-target="#modalC">Baca Materi</button>
+          <button class="btn" data-modal-target=".modal2">Baca Materi</button>
         </div>
       </div>
       <div class="card">
@@ -97,7 +106,7 @@
         </div>
         <div class="cardBody">
           <p>Mau tau apa itu pemrograman Visual Basic.Net? yuk klik tombol bawah ini untuk mengetahuinya.</p>
-          <button class="btn" data-modal-target="#modalBasic">Baca Materi</button>
+          <button class="btn" data-modal-target=".modal3">Baca Materi</button>
         </div>
       </div>
       <div class="card">
@@ -106,7 +115,7 @@
         </div>
         <div class="cardBody">
           <p>Mau tau apa itu pemrograman Mobile Android? yuk klik tombol bawah ini untuk mengetahuinya.</p>
-          <button class="btn" data-modal-target="#modalMobile">Baca Materi</button>
+          <button class="btn" data-modal-target=".modal4">Baca Materi</button>
         </div>
       </div>
       <div class="card">
@@ -115,7 +124,7 @@
         </div>
         <div class="cardBody">
           <p>Mau tau apa itu pemrograman JAVA yuk klik tombol bawah ini untuk mengetahuinya.</p>
-          <button class="btn" data-modal-target="#modalJava">Baca Materi</button>
+          <button class="btn" data-modal-target=".modal5">Baca Materi</button>
         </div>
       </div>
       <div class="card">
@@ -124,7 +133,7 @@
         </div>
         <div class="cardBody">
           <p>Mau tau apa itu Database MySQL yuk klik tombol bawah ini untuk mengetahuinya.</p>
-          <button class="btn" data-modal-target="#modalMysql">Baca Materi</button>
+          <button class="btn" data-modal-target=".modal6">Baca Materi</button>
         </div>
       </div>
       <div class="card">
@@ -133,122 +142,141 @@
         </div>
         <div class="cardBody">
           <p>Mau tau apa itu SQL Server yuk klik tombol bawah ini untuk mengetahuinya.</p>
-          <button class="btn" data-modal-target="#modalSql">Baca Materi</button>
+          <button class="btn" data-modal-target=".modal7">Baca Materi</button>
         </div>
       </div>
     </div>
-    
-    <!-- pop up materi PHP -->
-    <div class="modal" id="modalPHP">
-      <div class="modal-header">
-        <div class="title">Pemrograman Web dengan PHP</div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body">
-        PHP  (PHP: Hypertext Preprocessor) adalah sebuah bahasa pemrograman server side scripting yang bersifat open source.
-        <br><br>
-        Sebagai sebuah scripting language, PHP menjalankan instruksi pemrograman saat proses runtime. Hasil dari instruksi tentu akan berbeda tergantung data yang diproses.
-        <br><br>
-        PHP merupakan bahasa pemrograman server-side, maka script dari PHP nantinya akan diproses di server. Jenis server yang sering digunakan bersama dengan PHP antara lain Apache, Nginx, dan LiteSpeed. <br><br>
-        <a href="https://www.google.com/amp/s/www.niagahoster.co.id/blog/pengertian-php/">Baca Selengkapnya</a>
-      </div>
-    </div>
-    <div id="overlay"></div>
-    
-    <!-- pop up materi C++ -->
-    <div class="modal" id="modalC">
-      <div class="modal-header">
-        <div class="title">Pemrograman C++</div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body">
-        Bahasa pemrograman C++ adalah bahasa yang bisa digunakan untuk membuat berbagai aplikasi. Misalnya, aplikasi pengolah gambar, software gadget, game, hingga sistem operasi baru.
-        <br><br>
-        Bahasa ini dikembangkan dari bahasa pemrograman C. Tak heran kalau dua bahasa ini memiliki sintaks dan struktur kode yang sama. Bedanya, C++ merupakan Object Oriented Programming (OOP) sedangkan C merupakan bahasa pemrograman prosedural. 
-        <br><br>
-        <a href="https://www.google.com/amp/s/www.niagahoster.co.id/blog/bahasa-pemrograman-cpp/">Baca Selengkapnya</a>
-      </div>
-    </div>
-    <div id="overlay"></div>
-    
-    <!-- pop up materi Basic.Net -->
-    <div class="modal" id="modalBasic">
-      <div class="modal-header">
-        <div class="title">Pemrograman Visual Basic.Net</div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body">
-        VB.NET adalah singkatan dari Visual Basic.NET. VB.NET adalah bahasa pemrograman yang berorientasi objek (OOP). Ini berarti VB.Net telah mendukung fitur pemrograman berorientasi objek yang meliputi enkapsulasi, polimorfisme, abstraksi, dan inheritance.
-        <br><br>
-        Visual Basic .ASP NET berjalan menggunakan .NET framework, yang berarti telah memiliki akses penuh ke .NET libraries. Ini adalah alat yang sangat produktif untuk membuat berbagai aplikasi Web, Windows, Office, dan mobile yang telah dibangun di atas .NET framework.
-        <br><br>
-        <a href="https://www.google.com/amp/s/wartaekonomi.co.id/amp/read372885/apa-itu-visual-basicnet">Baca Selengkapnya</a>
-      </div>
-    </div>
-    <div id="overlay"></div>
-    
-    <!-- pop up materi Mobile Android -->
-    <div class="modal" id="modalMobile">
-      <div class="modal-header">
-        <div class="title">Pemrograman Mobile Android</div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body">
-        Pemrograman mobile merupakan gabungan antara kata ” pemrograman ” dan ” mobile “. Istilah lainnya yaitu mobile programming. Pemrograman ini secara singkat memiliki makna proses menulis kode-kode program untuk membuat aplikasi yang ditujukan untuk perangkat bergerak (Mobile).
-        <br><br>
-        Jadi berbagai jenis aplikasi smartphone yang kita pakai setiap hari merupakan hasil akhir dari pemrograman mobile. Orang yang membuatnya disebut Mobile Developer, baik itu mobile android developer atau mobile iOS developer.
-        <br><br>
-        <a href="https://badoystudio.com/pemrograman-mobile/">Baca Selengkapnya</a>
-      </div>
-    </div>
-    <div id="overlay"></div>
-    
-    <!-- pop up materi Java -->
-    <div class="modal" id="modalJava">
-      <div class="modal-header">
-        <div class="title">Pemrograman JAVA</div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body">
-        Java adalah bahasa “native” atau bahasa asli untuk membuat aplikasi android. Dan saat ini jumlah perangkat mobile sudah jauh melampaui perangkat komputer / laptop.
-        <br><br>
-        Selain itu, bahasa Java juga menjadi bahasa pemrograman wajib untuk setiap kampus atau institusi pendidikan komputer, terutama ketika membahas materi pemrograman berbasis object (PBO) atau yang dalam bahasa inggris disebut object oriented programming (OOP).
-        <br><br>
-        <a href="https://www.duniailkom.com/tutorial-belajar-bahasa-pemrograman-java-untuk-pemula/">Baca Selengkapnya</a>
-      </div>
-    </div>
-    <div id="overlay"></div>
-    
-    <!-- pop up materi Mysql -->
-    <div class="modal" id="modalMysql">
-      <div class="modal-header">
-        <div class="title">Database MySQL</div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body">
-        MySQL atau dibaca My Sequel merupakan sebuah Database Management System atau sering disingkat DBMS yang dijalankan menggunakan perintah SQL (Structured Query Language) yang populer digunakan untuk pembuatan aplikasi berbasis website.
-        <br><br>
-        MySQL juga termasuk ke dalam RDBMS atau Relational Database Management System, dimana di dalam struktur databasenya sehingga ketika proses pengambilan data menggunakan metode relational database. Yang juga menjadi penghubung antara perangkat lunak dan database server.
-        <br><br>
-        <a href="https://www.dqlab.id/fungsi-mysql-kelebihan-serta-kekurangannya#:~:text=MySQL%20atau%20dibaca%20My%20Sequel,untuk%20pembuatan%20aplikasi%20berbasis%20website.">Baca Selengkapnya</a>
-      </div>
-    </div>
-    <div id="overlay"></div>
-    
-    <!-- pop up materi SQL Server -->
-    <div class="modal" id="modalSql">
-      <div class="modal-header">
-        <div class="title">SQL Server</div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body">
-        Microsoft SQL Server adalah salah satu software jenis Relational Database Management System (RDBMS) yang cukup sering digunakan. Sesuai namanya, software ini dikembangkan oleh perusahaan besar Microsoft dan cukup scalable. Maksudnya adalah untuk pemakaiannya Microsoft SQL Server bisa dimana – mana dari laptop manapun, ke jaringan server cloud dan lain – lain. Namun istilah scalable ini tetap saja harus memperhatikan persyaratan hardware maupun software.
-        <br><br>
-        <a href="https://www.nesabamedia.com/pengertian-microsoft-sql-server/">Baca Selengkapnya</a>
-      </div>
-    </div>
-    <div id="overlay"></div>
   </section>
+  
+  <!-- popup modal -->
+  <div id="modal" class="modal1">
+    <div class="modalContent">
+      <div class="modalHeader">
+        <h2>Pemrograman Web dengan PHP</h2>
+        <span data-close-btn class="closeBtn">&times;</span>
+      </div>
+      
+      <div class="modalBody">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a justo id quam finibus elementum vitae vel ante. Nulla et finibus ligula, eget fringilla arcu. Sed sit amet ex vitae justo tincidunt ullamcorper quis nec elit. Vivamus pellentesque, leo eu dignissim finibus, ex lacus rhoncus lectus, eget pellentesque velit nunc sed diam. Fusce ipsum nisl, viverra et eros a, pulvinar blandit metus. Suspendisse blandit placerat nunc, vitae pretium nisi luctus sit amet. Mauris sed mattis nisl, in molestie arcu. Proin pulvinar id felis quis fermentum. Praesent molestie nibh blandit sem consectetur, non dapibus nulla dictum.</p>
+      </div>
+      
+      <div class="modalFooter">
+        <h3>&copy; Aji Nur Aji | Erpeel 4</h3>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div id="modal" class="modal2">
+    <div class="modalContent">
+      <div class="modalHeader">
+        <h2>Pemrograman C++</h2>
+        <span data-close-btn class="closeBtn">&times;</span>
+      </div>
+      
+      <div class="modalBody">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a justo id quam finibus elementum vitae vel ante. Nulla et finibus ligula, eget fringilla arcu. Sed sit amet ex vitae justo tincidunt ullamcorper quis nec elit. Vivamus pellentesque, leo eu dignissim finibus, ex lacus rhoncus lectus, eget pellentesque velit nunc sed diam. Fusce ipsum nisl, viverra et eros a, pulvinar blandit metus. Suspendisse blandit placerat nunc, vitae pretium nisi luctus sit amet. Mauris sed mattis nisl, in molestie arcu. Proin pulvinar id felis quis fermentum. Praesent molestie nibh blandit sem consectetur, non dapibus nulla dictum.</p>
+      </div>
+      
+      <div class="modalFooter">
+        <h3>&copy; Aji Nur Aji | Erpeel 4</h3>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div id="modal" class="modal3">
+    <div class="modalContent">
+      <div class="modalHeader">
+        <h2>Pemrograman Visual Basic.Net</h2>
+        <span data-close-btn class="closeBtn">&times;</span>
+      </div>
+  
+      <div class="modalBody">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a justo id quam finibus elementum vitae vel ante. Nulla et finibus ligula, eget fringilla arcu. Sed sit amet ex vitae justo tincidunt ullamcorper quis nec elit. Vivamus pellentesque, leo eu dignissim finibus, ex lacus rhoncus lectus, eget pellentesque velit nunc sed diam. Fusce ipsum nisl, viverra et eros a, pulvinar blandit metus. Suspendisse blandit placerat nunc, vitae pretium nisi luctus sit amet. Mauris sed mattis nisl, in molestie arcu. Proin pulvinar id felis quis fermentum. Praesent molestie nibh blandit sem consectetur, non dapibus nulla dictum.</p>
+      </div>
+  
+      <div class="modalFooter">
+        <h3>&copy; Aji Nur Aji | Erpeel 4</h3>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+  <div id="modal" class="modal4">
+    <div class="modalContent">
+      <div class="modalHeader">
+        <h2>Pemrograman Mobile Android</h2>
+        <span data-close-btn class="closeBtn">&times;</span>
+      </div>
+  
+      <div class="modalBody">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a justo id quam finibus elementum vitae vel ante. Nulla et finibus ligula, eget fringilla arcu. Sed sit amet ex vitae justo tincidunt ullamcorper quis nec elit. Vivamus pellentesque, leo eu dignissim finibus, ex lacus rhoncus lectus, eget pellentesque velit nunc sed diam. Fusce ipsum nisl, viverra et eros a, pulvinar blandit metus. Suspendisse blandit placerat nunc, vitae pretium nisi luctus sit amet. Mauris sed mattis nisl, in molestie arcu. Proin pulvinar id felis quis fermentum. Praesent molestie nibh blandit sem consectetur, non dapibus nulla dictum.</p>
+      </div>
+  
+      <div class="modalFooter">
+        <h3>&copy; Aji Nur Aji | Erpeel 4</h3>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+  <div id="modal" class="modal5">
+    <div class="modalContent">
+      <div class="modalHeader">
+        <h2>Pemrograman JAVA</h2>
+        <span data-close-btn class="closeBtn">&times;</span>
+      </div>
+  
+      <div class="modalBody">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a justo id quam finibus elementum vitae vel ante. Nulla et finibus ligula, eget fringilla arcu. Sed sit amet ex vitae justo tincidunt ullamcorper quis nec elit. Vivamus pellentesque, leo eu dignissim finibus, ex lacus rhoncus lectus, eget pellentesque velit nunc sed diam. Fusce ipsum nisl, viverra et eros a, pulvinar blandit metus. Suspendisse blandit placerat nunc, vitae pretium nisi luctus sit amet. Mauris sed mattis nisl, in molestie arcu. Proin pulvinar id felis quis fermentum. Praesent molestie nibh blandit sem consectetur, non dapibus nulla dictum.</p>
+      </div>
+  
+      <div class="modalFooter">
+        <h3>&copy; Aji Nur Aji | Erpeel 4</h3>
+      </div>
+  
+    </div>
+  </div>
+  
+  <div id="modal" class="modal6">
+    <div class="modalContent">
+      <div class="modalHeader">
+        <h2>Database MySQL</h2>
+        <span data-close-btn class="closeBtn">&times;</span>
+      </div>
+  
+      <div class="modalBody">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a justo id quam finibus elementum vitae vel ante. Nulla et finibus ligula, eget fringilla arcu. Sed sit amet ex vitae justo tincidunt ullamcorper quis nec elit. Vivamus pellentesque, leo eu dignissim finibus, ex lacus rhoncus lectus, eget pellentesque velit nunc sed diam. Fusce ipsum nisl, viverra et eros a, pulvinar blandit metus. Suspendisse blandit placerat nunc, vitae pretium nisi luctus sit amet. Mauris sed mattis nisl, in molestie arcu. Proin pulvinar id felis quis fermentum. Praesent molestie nibh blandit sem consectetur, non dapibus nulla dictum.</p>
+      </div>
+  
+      <div class="modalFooter">
+        <h3>&copy; Aji Nur Aji | Erpeel 4</h3>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div id="modal" class="modal7">
+    <div class="modalContent">
+      <div class="modalHeader">
+        <h2>SQL Server</h2>
+        <span data-close-btn class="closeBtn">&times;</span>
+      </div>
+  
+      <div class="modalBody">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a justo id quam finibus elementum vitae vel ante. Nulla et finibus ligula, eget fringilla arcu. Sed sit amet ex vitae justo tincidunt ullamcorper quis nec elit. Vivamus pellentesque, leo eu dignissim finibus, ex lacus rhoncus lectus, eget pellentesque velit nunc sed diam. Fusce ipsum nisl, viverra et eros a, pulvinar blandit metus. Suspendisse blandit placerat nunc, vitae pretium nisi luctus sit amet. Mauris sed mattis nisl, in molestie arcu. Proin pulvinar id felis quis fermentum. Praesent molestie nibh blandit sem consectetur, non dapibus nulla dictum.</p>
+      </div>
+  
+      <div class="modalFooter">
+        <h3>&copy; Aji Nur Aji | Erpeel 4</h3>
+      </div>
+    </div>
+  </div>
   
   
   <!-- javascript src -->

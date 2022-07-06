@@ -70,7 +70,7 @@
 #materi .row .card{
   width: 24rem;
   background: #fbfbfa;
-  border: 1px solid #ccc;
+  border: 1px solid #1c366d;
   margin-bottom: 50px;
   transition: .3s;
 }
@@ -78,7 +78,7 @@
 #materi .row .card .cardHeader{
   text-align: center;
   padding: 50px 10px;
-  background: #1c366d;
+  background: linear-gradient(to bottom, #1c366d, #567fd6);
   color: #fbfbfa;
 }
 
@@ -99,8 +99,9 @@
 }
 
 .cardBody .btn:hover{
-  background: #fcb504;
-  color: #1c366d;
+  background: linear-gradient(to top, #567fd6, #1c366d);
+  color: #fbfbfa;
+  transition: .7s ease-in; 
 }
 
 .card:hover{
@@ -109,77 +110,99 @@
 }
 
 
-/* popup materi */
-.modal{
+/* popup modal */
+#modal{
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
-  border: 1px solid #1c366d;
-  z-index: 10;
-  background-color: #fcb504;
-  border-radius: 4px;
-  padding: 5px 10px;
-  width: 500px;
-  max-width: 100%;
-}
-
-.modal.active{
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.modal .modal-header{
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #1c366d;
-}
-
-.modal .modal-header .title{
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #221811;
-}
-
-.modal-header .close-button{
-  margin-left: 5px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #dc1617;
-}
-
-.modal .modal-body{
-  padding: 10px 15px;
-  color: #221811;
-}
-
-.modal .modal-body a{
-  color: #1c366d;
-}
-
-#overlay{
-  position: fixed;
-  opacity: 0;
-  transition: 200ms ease-in-out;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .5);
-  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, .25);
+  z-index: 1;
+  display: none;
+  backdrop-filter: blur(2px);
 }
 
-#overlay.active{
+#modal.open{
   opacity: 1;
-  pointer-events: all;
+  display: block;
 }
 
+.modalContent{
+  position: relative;
+  background-color: #fbfbfa;
+  margin: 100px auto;
+  padding: 0;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 700px;
+  max-width: 85%;
+  animation: open .5s ease-in-out;
+}
+
+@keyframes open{
+  from{
+    transform: scale(0);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modalHeader{
+  padding: 2px 16px;
+  background-color: #1c366d;
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  justify-content: space-between;
+}
+
+.modalHeader h2{
+  font-size: 25px;
+  margin: 20px 0;
+  color: #fbfbfa;
+}
+
+.closeBtn{
+  position: relative;
+  color: #dc1617;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 12px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #dc1617;
+  cursor: pointer;
+  text-align: center;
+}
+
+.modalBody{
+  padding: 2px 16px;
+}
+
+.modalBody p{
+  font-size: 25px;
+  margin: 4% auto;
+}
+
+.modalFooter{
+  padding: 6px 16px;
+  background: #1c366d;
+  color: #fbfbfa;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.modalFooter h3{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
 @media (max-width: 768px){
   #home{
@@ -215,8 +238,7 @@
     font-size: 15px;
   }
   
-  #materi .row .card .cardBody,
-  .modal .modal-body{
+  #materi .row .card .cardBody{
     font-size: 14px;
   }
   
@@ -224,15 +246,22 @@
     width: 100%;
   }
   
-  .modal-header .close-button{
+  .modalHeader h2{
+    font-size: 18px;
+  }
+  
+  .closeBtn{
     font-size: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
   }
   
-  .modal .modal-header .title{
-    font-size: 17px;
+  .modalBody p{
+    font-size: 14px;
   }
   
-  .modal{
-    width: 95%;
+  .modalFooter h3{
+    font-size: 15px;
   }
 }

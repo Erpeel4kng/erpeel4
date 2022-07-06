@@ -41,6 +41,45 @@ nav .navMenu ul{
   align-items: center;
 }
 
+nav .navMenu ul ul{
+  position: absolute;
+  top: 90px;
+  display: block;
+  background: #fbfbfa;
+  opacity: 0;
+  visibility: hidden;
+  border-top: 3px solid #1c366d;
+  transition: top .3s;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.show, input{
+  display: none;
+}
+
+nav .navMenu ul li:hover ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+nav .navMenu ul ul li{
+  position: relative;
+  margin: 0;
+  width: 100px;
+  display: list-item;
+  border-bottom: 1px solid rgba(0, 0, 0, .15);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+nav .navMenu ul ul li a{
+  display: inline-block;
+  padding: 15px 10px;
+  width: 100%;
+}
+
 nav .navMenu ul li{
   margin-left: 30px;
   list-style: none;
@@ -53,7 +92,8 @@ nav .navMenu ul li a{
   transition: .3s ease;
 }
 
-nav .navMenu ul li a:hover{
+nav .navMenu ul li a:hover,
+.show:hover{
   color: #fbc504;
 }
 
@@ -100,13 +140,13 @@ nav .navMenu ul li a:hover{
   
   .navMenu{
     position: absolute;
-    top: -300%;
+    top: -400%;
     left: 0;
     width: 100%;
     height: 0;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-    z-index: -100;
+    z-index: -10;
   }
   
   nav .navMenu ul{
@@ -116,11 +156,22 @@ nav .navMenu ul li a:hover{
     background-color: #fbfbfa;
     align-items: center;
   }
-  nav .navMenu ul li{
+  nav .navMenu ul li,
+  nav .navMenu ul ul li{
     margin-left: 0;
+    padding: 0 15px;
     width: 100%;
-    text-align: center;
+    text-align: start;
     border-bottom: 1px solid rgba(0, 0, 0, .15);
+    background-color: #fbfbfa;
+  }
+  
+  nav .navMenu ul ul li{
+    border-radius: 0;
+  }
+  
+  nav .navMenu ul ul .nbb{
+    border-bottom: 0;
   }
   
   nav .navMenu ul li a{
@@ -147,6 +198,30 @@ nav .navMenu ul li a:hover{
   
   .navMenu.active{
     top: 70px;
-    height: 199px;
+  }
+  
+  nav .navMenu ul ul{
+    position: static;
+    border-top: none;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .show, .navMenu ul li .hidden{
+    display: none;
+  }
+  
+  [id^="btn"]:checked + ul{
+    display: block;
+  }
+  
+  .show{
+    display: block;
+    color: #1c366d;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .3s ease;
+    line-height: 70px;
   }
 }
