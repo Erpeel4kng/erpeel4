@@ -27,35 +27,38 @@
   <div class="scrollTop" onclick="scrollToTop()"><i class="fa-solid fa-angles-up"></i></div>
   
   <!-- navbar -->
-  <section class="navbar">
-    <header>
-      <nav class="navigation">
-        <a href="#" class="brand">ER<span>PE</span><span class="merah">EL 4</span></a>
-        
-        <div class="navMenu">
-          <ul>
-            <li><a href="#" class="navLink">Beranda</a></li>
-            <li>
-              <label for="btn1" class="show">Daftar &plus;</label>
-              <a href="#" class="hidden">Daftar</a>
-              <input type="checkbox" id="btn1">
-              <ul>
-                <li><a href="./daftar/murid.html">Siswa/i</a></li>
-                <li class="nbb"><a href="./daftar/guru.html">Guru</a></li>
-              </ul>
-            </li>
-            <li><a href="./galeri.html" class="navLink">Galeri</a></li>
-            <li><a href="./contact.html" class="navLink">Kontak</a></li>
-          </ul>
+  <header class="header">
+    <div class="container">
+      <div class="header-main">
+        <div class="logo">
+          <a href="#">ER<span>PE</span><span class="kuning">EL 4</span></a>
         </div>
-        <div class="hamburger">
+        
+        <div class="open-nav-menu">
           <span class="bar1"></span>
           <span class="bar2"></span>
           <span class="bar3"></span>
         </div>
-      </nav>
-    </header>
-  </section>
+        
+        <!-- nav start -->
+        <nav class="nav-menu">
+          <ul class="menu">
+            <li class="menu-item"><a href="#">Beranda</a></li>
+            <li class="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu">Daftar <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#">Siswa/i</a></li>
+                <li class="menu-item"><a href="#">Guru</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="#">Galeri</a></li>
+            <li class="menu-item"><a href="#">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
   
   <!-- home section -->
   <section id="home">
