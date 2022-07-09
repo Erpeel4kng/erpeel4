@@ -50,7 +50,7 @@ h1:before{
 }
 
 .scrollTop i.active{
-  bottom: 40px;
+  bottom: 100px;
   visibility: visible;
   opacity: 1;
 }
@@ -66,5 +66,9 @@ h1:before{
     height: 40px;
     line-height: 40px;
     font-size: 1.2rem;
+  }
+  
+  .scrollTop i.active{
+    bottom: 50px;
   }
 }
