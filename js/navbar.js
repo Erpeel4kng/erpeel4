@@ -1,4 +1,4 @@
-const openNavMenu = document.querySelector(".open-nav-menu");
+const openNavMenu = document.querySelector(".hamburger-toggler");
 const navMenu = document.querySelector(".nav-menu");
 const mediaSize = 991;
 

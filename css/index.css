@@ -18,6 +18,7 @@
   font-size: 2.2rem;
   letter-spacing: 1px;
   text-decoration: none;
+  pointer-events: none;
 }
 
 #home h3{
@@ -40,8 +41,10 @@
 }
 
 
-/* pengertian */
-#pengertian{
+/* section */
+#pengertian,
+#materi,
+#profession{
   padding: 5vw 8vw 0 8vw;
   text-align: start;
 }
@@ -52,13 +55,7 @@
   margin-top: 10px;
 }
 
-
 /* materi */
-#materi{
-  padding: 5vw 8vw 0 8vw;
-  text-align: start;
-}
-
 #materi .row{
   display: flex;
   flex-direction: row;
@@ -68,7 +65,7 @@
 }
 
 #materi .row .card{
-  width: 24rem;
+  width: 100%;
   background: #fbfbfa;
   border: 1px solid #1c366d;
   margin-bottom: 50px;
@@ -96,6 +93,7 @@
   padding: 10px 5px;
   border: none;
   border-radius: 3px;
+  width: 100%;
 }
 
 .cardBody .btn:hover{
@@ -204,6 +202,24 @@
   letter-spacing: 1px;
 }
 
+/* profesi */
+#profession .bidang ol{
+  margin-left: 5vw;
+  margin-top: 10px;
+  color: #221811;
+}
+
+#profession .bidang ol li{
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#profession .bidang ol li p{
+  font-size: 1rem;
+  margin-top: px;
+  font-weight: normal;
+}
+
 @media (max-width: 768px){
   #home{
     height: 250px;
@@ -222,16 +238,15 @@
     height: 2px;
   }
   
-  #pengertian{
+  #pengertian,
+  #materi,
+  #profession{
     padding: 15px 20px;
   }
   
-  #pengertian .penjelasan p{
+  #pengertian .penjelasan p,
+  #profession .bidang ol li p{
     font-size: 14px;
-  }
-  
-  #materi{
-    padding: 15px 20px;
   }
   
   #materi .row .card .cardHeader{
@@ -240,10 +255,6 @@
   
   #materi .row .card .cardBody{
     font-size: 14px;
-  }
-  
-  .card{
-    width: 100%;
   }
   
   .modalHeader h2{
