@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./css/murid.css">
   <link rel="stylesheet" href="../css/all.css">
   <link rel="stylesheet" href="../css/navbar.css">
-  <link rel="stylesheet" href="../css/fakeLoader.css">
+  <link rel="stylesheet" href="../css/loading.css">
   <link rel="stylesheet" href="../css/footer.css">
 
   <!-- jquery -->
@@ -22,7 +22,12 @@
 
 <body>
   <!-- loading -->
-  <div class="fakeLoader"></div>
+  <div class="intro">
+    <h1 class="logo-header">
+      <span class="logo">ER</span><span class="logo merah">PE</span><span class="logo kuning">EL 4</span>
+    </h1>
+  </div>
+  
 
   <!-- backToTop btn -->
   <div class="scrollTop" onclick="scrollToTop()"><i class="fa-solid fa-angles-up"></i></div>
@@ -93,15 +98,8 @@
   <script src="../js/navbar.js"></script>
   <script src="../js/backToTop.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="../js/fakeLoader.js"></script>
-        <script>
-            $(document).ready(function () {
-                $.fakeLoader({
-                    bgColor: '#fbfbfa',
-                    spinner:"spinner2"
-                });
-            });
-        </script>
+  <script src="../js/loading.js"></script>
+
 </body>
 
 </html>
