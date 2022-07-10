@@ -42,7 +42,7 @@ h1:before{
   border-radius: 50%;
   background-size: 40px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 11;
   visibility: hidden;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
   opacity: 0;
@@ -50,7 +50,7 @@ h1:before{
 }
 
 .scrollTop i.active{
-  bottom: 100px;
+  bottom: 50px;
   visibility: visible;
   opacity: 1;
 }
@@ -66,9 +66,5 @@ h1:before{
     height: 40px;
     line-height: 40px;
     font-size: 1.2rem;
-  }
-  
-  .scrollTop i.active{
-    bottom: 50px;
   }
 }
