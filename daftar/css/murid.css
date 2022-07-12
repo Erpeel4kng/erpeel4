@@ -1,69 +1,122 @@
-.tableSection{
-  margin-top: 90px;
-  padding: 5vw 2.5vw 0 2.5vw;
+.table{
+  margin-top: 80px;
+  text-align: center;
 }
 
-table{
-  width: 95%;
-  border-collapse: collapse;
-  margin: 40px auto;
-}
-
-tr:nth-of-type(odd) { 
-	background: #eee; 
-}
-
-th{
-  background: #1c366d;
-  color: #fbfbfa;
+.table span{
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
   font-weight: bold;
 }
 
-td, th{
-  padding: 10px;
-  border: 1px solid #ccc;
-  text-align: left;
-  font-size: 18px;
+.table span p{
+  font-size: .8em;
+  font-weight: normal;
 }
-@media only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+.table input{
+  border: 1px solid #1c366d;
+  background: #fbfbfa;
+  color: #1c366d;
+  padding: 5px;
+  outline: none;
+  border-radius: 5px; 
+  margin: 25px;
+  float: right;
+  width: 30%;
+  margin-bottom: 15px;
+}
+
+
+table{
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 80px auto;
+  padding: 0;
+  width: 95%;
+  table-layout: fixed;
+}
+
+table caption{
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+  font-weight: bold;
+}
+
+table caption p{
+  font-size: .8em;
+  font-weight: normal;
+}
+
+table tr{
+  background-color: #fbfbfa;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td{
+  padding: .625em;
+  text-align: left;
+}
+
+table th{
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background-color: #1c366d;
+  color: #fbfbfa;
+}
+
+@media (max-width: 768px){
+  table{
+    border: 0;
+    margin-top: 10px;
+  }
   
-	table { 
-	  	width: 95%; 
-	}
-	
-	table, thead, tbody, th, td, tr { 
-		display: block; 
-	}
-	
-	thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-	
-	tr{
-	  border: 1px solid #ccc;
-	  margin-bottom: 10px;
-	}
-	
-	td{
-	  border: none;
-	  border-bottom: 1px solid #ccc;
-	  position: relative;
-	  padding-left: 50%;
-	}
-	
-	td:before { 
-  	position: absolute;
-	  top: 6px;
-	  left: 6px;
-  	width: 45%; 
-  	padding-right: 10px; 
-  	display: inline-block;
-  	white-space: nowrap;
-  	content: attr(data-column);
-  	color: #221811;
-	  font-weight: bold;
-	}
+  .table span{
+    font-size: 1em;
+  }
+  
+  table thead{
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr{
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td{
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before{
+    content: attr(data-column);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child{
+    margin-bottom: 0;
+  }
+  
+  .table input{
+    width: 40%;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  
 }
