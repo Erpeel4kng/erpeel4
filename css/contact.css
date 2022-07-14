@@ -1,0 +1,92 @@
+.contact{
+  margin-top: 90px;
+  padding: 20px;
+}
+.contact h1{
+  font-size: 30px;
+  text-align: center;
+  color: #221811;
+  font-weight: 500;
+}
+
+.contact h1:before{
+  display: none;
+}
+
+.contact p{
+  position: relative;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  color: #606060;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.contact form{
+  width: 100%;
+  position: relative;
+  margin: 30px auto 0 auto;
+}
+
+.contact form .row{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px 30px;
+  margin-bottom: 20px;
+}
+
+.contact form .row label{
+  color: #221811;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact form textarea,
+.contact form input{
+  width: 100%;
+  font-weight: 400;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1.2px solid #ccc;
+  margin-top: 5px;
+}
+
+.contact form textarea{
+  resize: none;
+}
+
+.contact form textarea:focus,
+.contact form input:focus{
+  outline: none;
+  border-color: #1c366d;
+}
+
+form button{
+  border: none;
+  background-color: #1c366d;
+  color: #fbfbfa;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+
+#error-message{
+  margin: 10px 0;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+#succes{
+  margin: 10px 0;
+  background: #8BFEA3;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}

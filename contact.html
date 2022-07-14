@@ -16,8 +16,14 @@
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   
+  
   <!-- kits fontawesome -->
   <script src="https://kit.fontawesome.com/067f89a637.js" crossorigin="anonymous"></script>
+  
+  <!-- sweetalert -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 
 <body>
@@ -65,6 +71,39 @@
   </header>
   
   
+  <!-- section form -->
+  <section class="contact">
+    <h1>Hubungi Kami</h1>
+    <p>Punya pertanyaan atau saran? Kirim pesan kepada kami.</p>
+    <form action="https://sheetdb.io/api/v1/jp9mzhyu8983q" id="myForm" method="POST">
+      <div class="row">
+        <div class="column">
+          <label for="name">Nama Lengkap</label>
+          <input type="text" name="data[nama]" id="name" placeholder="Masukkan nama anda" required>
+        </div>
+        <div class="column">
+          <label for="number phone">No.hp</label>
+          <input type="number" name="data[nohp]" id="nohp" placeholder="08XXXXXXXXXX" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="email">Email</label>
+          <input type="email" name="data[email]" id="email" placeholder="Masukkan email" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="Pesan">Pesan</label>
+          <textarea name="data[pesan]" rows="3" id="pesan" placeholder="Masukkan pesan anda" required></textarea>
+        </div>
+      </div>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+  
+  
+  
   
   <!-- footer -->
   <footer>
@@ -95,7 +134,9 @@
   <script src="./js/backToTop.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./js/loading.js"></script>
-
+  <script src="./js/toSpreadsheet.js"></script>
   
+  
+
 </body>
 </html>
