@@ -15,7 +15,7 @@
 }
 
 .table input{
-  border: 1px solid #1c366d;
+  border: 1px solid #ccc;
   background: #fbfbfa;
   color: #1c366d;
   padding: 5px;
@@ -25,6 +25,10 @@
   float: right;
   width: 30%;
   margin-bottom: 15px;
+}
+
+.table input:focus{
+  border: 1px solid #1c366d;
 }
 
 
@@ -68,6 +72,11 @@ table th{
   color: #fbfbfa;
 }
 
+.tengah{
+  text-align: center;
+  width: 7%;
+}
+
 @media (max-width: 768px){
   table{
     border: 0;
@@ -95,11 +104,13 @@ table th{
     margin-bottom: .625em;
   }
   
-  table td{
+  table td,
+  .tengah{
     border-bottom: 1px solid #ddd;
     display: block;
     font-size: .8em;
     text-align: right;
+    width: 100%;
   }
   
   table td::before{
